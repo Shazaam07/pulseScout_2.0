@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/splash_background"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/tv_lang_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Pick Your Language"
+        android:textColor="@color/text_primary"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_lang_subtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="You Can Change This Later In Settings."
+        android:textColor="@color/text_secondary"
+        android:textSize="14sp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_lang_title" />
+
+    <LinearLayout
+        android:id="@+id/ll_languages"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_lang_subtitle">
+
+        <!-- English (Selected state) -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_english"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginBottom="12dp"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:strokeColor="@color/brand_primary"
+            app:strokeWidth="1dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingHorizontal="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="English"
+                    android:textColor="@color/text_primary"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@android:drawable/ic_input_add"
+                    app:tint="@color/text_primary"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="UseAppTint" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Hindi -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_hindi"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginBottom="12dp"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:strokeColor="#333333"
+            app:strokeWidth="1dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="16dp"
+                android:text="हिन्दी (Hindi)"
+                android:textColor="#AAAAAA"
+                android:textSize="16sp" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Espanol -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_espanol"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginBottom="12dp"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:strokeColor="#333333"
+            app:strokeWidth="1dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="16dp"
+                android:text="Español"
+                android:textColor="#AAAAAA"
+                android:textSize="16sp" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Francais -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_francais"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginBottom="12dp"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:strokeColor="#333333"
+            app:strokeWidth="1dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="16dp"
+                android:text="Français"
+                android:textColor="#AAAAAA"
+                android:textSize="16sp" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Arabic -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_arabic"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginBottom="12dp"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:strokeColor="#333333"
+            app:strokeWidth="1dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="16dp"
+                android:text="العربية"
+                android:textColor="#AAAAAA"
+                android:textSize="16sp" />
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_continue_lang"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:text="Continue"
+        android:layout_marginBottom="16dp"
+        app:backgroundTint="@color/brand_primary"
+        app:layout_constraintBottom_toTopOf="@+id/btn_skip_lang"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_skip_lang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skip"
+        style="@style/Widget.Material3.Button.TextButton"
+        android:textColor="@color/text_primary"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="splash_background">@color/brand_secondary</color>
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">@color/brand_primary</color>
+</resources>
